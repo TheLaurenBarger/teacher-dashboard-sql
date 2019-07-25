@@ -1,0 +1,3 @@
+logging:
+  level:
+    za.co.teacher.dashboard: DEBUG
