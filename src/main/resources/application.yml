@@ -1,0 +1,26 @@
+application:
+  swagger:
+    enabled: true
+    regexPathExclusion: (/actuator.*|/error.*)
+    version: @project.version@
+    title: @project.name@
+    description: Swagger documentation for @project.description@
+    license: PRIVATE
+    contact:
+      name: Lauren Barger
+      email: lauren@bbd.co.za
+spring:
+  application:
+    name: teacher-dashboard
+  jpa:
+    open-in-view: true
+  h2:
+    console:
+      enabled: true
+logging:
+  pattern:
+    console: "%d %-5level %logger [%F:%L] - %m%n"
+server:
+  port: 8080
+  servlet:
+    context-path: "/teacher-dashboard"
